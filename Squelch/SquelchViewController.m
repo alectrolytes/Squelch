@@ -66,7 +66,7 @@ typedef NS_ENUM(NSInteger, BBBehaviorOverrideStatus) {
     BBSettingsGateway *_settingsGateway = [[BBSettingsGateway alloc] init];
     [_settingsGateway setBehaviorOverrideStatus:BBBehaviorOverrideStatusOn];
     NSDate *date = self.datePickerTime.date;
-    NSTimer *timer = [[NSTimer alloc] initWithFireDate:date interval:0 target:self selector:@selector(turnOffDND) userInfo:nil repeats:nil];
+    NSTimer *timer = [[NSTimer alloc] initWithFireDate:date interval:0 target:self selector:@selector(turnOffDND) userInfo:nil repeats:NO];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
 }
 
