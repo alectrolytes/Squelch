@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		707BD595195BE5D200E22C1C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 707BD594195BE5D200E22C1C /* Info.plist */; };
+		707F6AB51931E0930060E8C9 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 707F6AB41931E0930060E8C9 /* Entitlements.plist */; };
+		707F6AB71931E2440060E8C9 /* Squelch-storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707F6AB61931E2440060E8C9 /* Squelch-storyboard.storyboard */; };
+		707F6ABA1931E74D0060E8C9 /* SquelchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707F6AB91931E74D0060E8C9 /* SquelchViewController.m */; };
+		709F74131931DEAE00881C0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709F74121931DEAE00881C0C /* Foundation.framework */; };
+		709F74151931DEAE00881C0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709F74141931DEAE00881C0C /* CoreGraphics.framework */; };
+		709F74171931DEAE00881C0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709F74161931DEAE00881C0C /* UIKit.framework */; };
+		709F741D1931DEAE00881C0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 709F741B1931DEAE00881C0C /* InfoPlist.strings */; };
+		709F741F1931DEAE00881C0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 709F741E1931DEAE00881C0C /* main.m */; };
+		709F74231931DEAE00881C0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 709F74221931DEAE00881C0C /* AppDelegate.m */; };
+		709F74251931DEAE00881C0C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709F74241931DEAE00881C0C /* Images.xcassets */; };
+		709F742C1931DEAE00881C0C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709F742B1931DEAE00881C0C /* XCTest.framework */; };
+		709F742D1931DEAE00881C0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709F74121931DEAE00881C0C /* Foundation.framework */; };
+		709F742E1931DEAE00881C0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709F74161931DEAE00881C0C /* UIKit.framework */; };
+		709F74361931DEAE00881C0C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 709F74341931DEAE00881C0C /* InfoPlist.strings */; };
+		709F74381931DEAE00881C0C /* SquelchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 709F74371931DEAE00881C0C /* SquelchTests.m */; };
+		709F74421931DEDA00881C0C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709F74411931DEDA00881C0C /* MediaPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		709F742F1931DEAE00881C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 709F74071931DEAE00881C0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 709F740E1931DEAE00881C0C;
+			remoteInfo = Squelch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		707BD594195BE5D200E22C1C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		707F6AB41931E0930060E8C9 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		707F6AB61931E2440060E8C9 /* Squelch-storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Squelch-storyboard.storyboard"; sourceTree = "<group>"; };
+		707F6AB81931E74D0060E8C9 /* SquelchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquelchViewController.h; sourceTree = "<group>"; };
+		707F6AB91931E74D0060E8C9 /* SquelchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquelchViewController.m; sourceTree = "<group>"; };
+		709F740F1931DEAE00881C0C /* Squelch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squelch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		709F74121931DEAE00881C0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		709F74141931DEAE00881C0C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		709F74161931DEAE00881C0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		709F741A1931DEAE00881C0C /* Squelch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Squelch-Info.plist"; sourceTree = "<group>"; };
+		709F741C1931DEAE00881C0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		709F741E1931DEAE00881C0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		709F74201931DEAE00881C0C /* Squelch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Squelch-Prefix.pch"; sourceTree = "<group>"; };
+		709F74211931DEAE00881C0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		709F74221931DEAE00881C0C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		709F74241931DEAE00881C0C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		709F742A1931DEAE00881C0C /* SquelchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquelchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		709F742B1931DEAE00881C0C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		709F74331931DEAE00881C0C /* SquelchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SquelchTests-Info.plist"; sourceTree = "<group>"; };
+		709F74351931DEAE00881C0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		709F74371931DEAE00881C0C /* SquelchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SquelchTests.m; sourceTree = "<group>"; };
+		709F74411931DEDA00881C0C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		709F740C1931DEAE00881C0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709F74421931DEDA00881C0C /* MediaPlayer.framework in Frameworks */,
+				709F74151931DEAE00881C0C /* CoreGraphics.framework in Frameworks */,
+				709F74171931DEAE00881C0C /* UIKit.framework in Frameworks */,
+				709F74131931DEAE00881C0C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709F74271931DEAE00881C0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709F742C1931DEAE00881C0C /* XCTest.framework in Frameworks */,
+				709F742E1931DEAE00881C0C /* UIKit.framework in Frameworks */,
+				709F742D1931DEAE00881C0C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		709F74061931DEAE00881C0C = {
+			isa = PBXGroup;
+			children = (
+				709F74181931DEAE00881C0C /* Squelch */,
+				709F74311931DEAE00881C0C /* SquelchTests */,
+				709F74111931DEAE00881C0C /* Frameworks */,
+				709F74101931DEAE00881C0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		709F74101931DEAE00881C0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				709F740F1931DEAE00881C0C /* Squelch.app */,
+				709F742A1931DEAE00881C0C /* SquelchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		709F74111931DEAE00881C0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				709F74411931DEDA00881C0C /* MediaPlayer.framework */,
+				709F74121931DEAE00881C0C /* Foundation.framework */,
+				709F74141931DEAE00881C0C /* CoreGraphics.framework */,
+				709F74161931DEAE00881C0C /* UIKit.framework */,
+				709F742B1931DEAE00881C0C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		709F74181931DEAE00881C0C /* Squelch */ = {
+			isa = PBXGroup;
+			children = (
+				709F74211931DEAE00881C0C /* AppDelegate.h */,
+				709F74221931DEAE00881C0C /* AppDelegate.m */,
+				707F6AB81931E74D0060E8C9 /* SquelchViewController.h */,
+				707F6AB91931E74D0060E8C9 /* SquelchViewController.m */,
+				709F74241931DEAE00881C0C /* Images.xcassets */,
+				709F74191931DEAE00881C0C /* Supporting Files */,
+				707F6AB61931E2440060E8C9 /* Squelch-storyboard.storyboard */,
+			);
+			path = Squelch;
+			sourceTree = "<group>";
+		};
+		709F74191931DEAE00881C0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				707F6AB41931E0930060E8C9 /* Entitlements.plist */,
+				709F741A1931DEAE00881C0C /* Squelch-Info.plist */,
+				709F741B1931DEAE00881C0C /* InfoPlist.strings */,
+				709F741E1931DEAE00881C0C /* main.m */,
+				709F74201931DEAE00881C0C /* Squelch-Prefix.pch */,
+				707BD594195BE5D200E22C1C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		709F74311931DEAE00881C0C /* SquelchTests */ = {
+			isa = PBXGroup;
+			children = (
+				709F74371931DEAE00881C0C /* SquelchTests.m */,
+				709F74321931DEAE00881C0C /* Supporting Files */,
+			);
+			path = SquelchTests;
+			sourceTree = "<group>";
+		};
+		709F74321931DEAE00881C0C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				709F74331931DEAE00881C0C /* SquelchTests-Info.plist */,
+				709F74341931DEAE00881C0C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		709F740E1931DEAE00881C0C /* Squelch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 709F743B1931DEAE00881C0C /* Build configuration list for PBXNativeTarget "Squelch" */;
+			buildPhases = (
+				709F740B1931DEAE00881C0C /* Sources */,
+				709F740C1931DEAE00881C0C /* Frameworks */,
+				709F740D1931DEAE00881C0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Squelch;
+			productName = Squelch;
+			productReference = 709F740F1931DEAE00881C0C /* Squelch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		709F74291931DEAE00881C0C /* SquelchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 709F743E1931DEAE00881C0C /* Build configuration list for PBXNativeTarget "SquelchTests" */;
+			buildPhases = (
+				709F74261931DEAE00881C0C /* Sources */,
+				709F74271931DEAE00881C0C /* Frameworks */,
+				709F74281931DEAE00881C0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				709F74301931DEAE00881C0C /* PBXTargetDependency */,
+			);
+			name = SquelchTests;
+			productName = SquelchTests;
+			productReference = 709F742A1931DEAE00881C0C /* SquelchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		709F74071931DEAE00881C0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Team Nexus";
+				TargetAttributes = {
+					709F74291931DEAE00881C0C = {
+						TestTargetID = 709F740E1931DEAE00881C0C;
+					};
+				};
+			};
+			buildConfigurationList = 709F740A1931DEAE00881C0C /* Build configuration list for PBXProject "Squelch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 709F74061931DEAE00881C0C;
+			productRefGroup = 709F74101931DEAE00881C0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				709F740E1931DEAE00881C0C /* Squelch */,
+				709F74291931DEAE00881C0C /* SquelchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		709F740D1931DEAE00881C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707F6AB51931E0930060E8C9 /* Entitlements.plist in Resources */,
+				709F741D1931DEAE00881C0C /* InfoPlist.strings in Resources */,
+				709F74251931DEAE00881C0C /* Images.xcassets in Resources */,
+				707BD595195BE5D200E22C1C /* Info.plist in Resources */,
+				707F6AB71931E2440060E8C9 /* Squelch-storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709F74281931DEAE00881C0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709F74361931DEAE00881C0C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		709F740B1931DEAE00881C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709F74231931DEAE00881C0C /* AppDelegate.m in Sources */,
+				709F741F1931DEAE00881C0C /* main.m in Sources */,
+				707F6ABA1931E74D0060E8C9 /* SquelchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		709F74261931DEAE00881C0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				709F74381931DEAE00881C0C /* SquelchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		709F74301931DEAE00881C0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 709F740E1931DEAE00881C0C /* Squelch */;
+			targetProxy = 709F742F1931DEAE00881C0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		709F741B1931DEAE00881C0C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				709F741C1931DEAE00881C0C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		709F74341931DEAE00881C0C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				709F74351931DEAE00881C0C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		709F74391931DEAE00881C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		709F743A1931DEAE00881C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		709F743C1931DEAE00881C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/Squelch/Entitlements.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Aaron Kramer (4KFUK6969G)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/System/Library/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Squelch/Squelch-Prefix.pch";
+				INFOPLIST_FILE = "Squelch/Squelch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					BulletinBoard,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5170807E-46E2-4F6F-91A2-C7EF026AA7D1";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		709F743D1931DEAE00881C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/Squelch/Entitlements.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Aaron Kramer (4KFUK6969G)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/System/Library/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Squelch/Squelch-Prefix.pch";
+				INFOPLIST_FILE = "Squelch/Squelch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = (
+					"-framework",
+					BulletinBoard,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5170807E-46E2-4F6F-91A2-C7EF026AA7D1";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		709F743F1931DEAE00881C0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Squelch.app/Squelch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Squelch/Squelch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SquelchTests/SquelchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		709F74401931DEAE00881C0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Squelch.app/Squelch";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Squelch/Squelch-Prefix.pch";
+				INFOPLIST_FILE = "SquelchTests/SquelchTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		709F740A1931DEAE00881C0C /* Build configuration list for PBXProject "Squelch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709F74391931DEAE00881C0C /* Debug */,
+				709F743A1931DEAE00881C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		709F743B1931DEAE00881C0C /* Build configuration list for PBXNativeTarget "Squelch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709F743C1931DEAE00881C0C /* Debug */,
+				709F743D1931DEAE00881C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		709F743E1931DEAE00881C0C /* Build configuration list for PBXNativeTarget "SquelchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				709F743F1931DEAE00881C0C /* Debug */,
+				709F74401931DEAE00881C0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 709F74071931DEAE00881C0C /* Project object */;
+}
