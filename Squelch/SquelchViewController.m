@@ -40,9 +40,10 @@ typedef NS_ENUM(NSInteger, BBBehaviorOverrideStatus) {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Sets DND to OFF when starting
+    /*// Sets DND to OFF when starting
     BBSettingsGateway *_settingsGateway = [[BBSettingsGateway alloc] init];
     [_settingsGateway setBehaviorOverrideStatus:BBBehaviorOverrideStatusOff];
+     */
     
     // Background task bypass
     UIBackgroundTaskIdentifier bgTask;
@@ -50,8 +51,7 @@ typedef NS_ENUM(NSInteger, BBBehaviorOverrideStatus) {
     bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
         [app endBackgroundTask:bgTask];
     }];
-    self.silenceTimer = [NSTimer scheduledTimerWithTimeInterval:300 target:self
-                                                       selector:@selector(startLocationServices) userInfo:nil repeats:YES];
+    self.silenceTimer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(startLocationServices) userInfo:nil repeats:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -82,7 +82,6 @@ typedef NS_ENUM(NSInteger, BBBehaviorOverrideStatus) {
 - (void)startLocationServices {
     CLLocationManager *locationManager = [[CLLocationManager alloc] init];
     [locationManager startUpdatingLocation];
-    
     [locationManager stopUpdatingLocation];
 }
 
