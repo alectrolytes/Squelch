@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		706DBFB5196E345E00469990 /* MMPSilence.wav in Resources */ = {isa = PBXBuildFile; fileRef = 706DBFB4196E345E00469990 /* MMPSilence.wav */; };
+		706DBFB9196E490600469990 /* White Lights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 706DBFB8196E490600469990 /* White Lights.mp3 */; };
 		707BD595195BE5D200E22C1C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 707BD594195BE5D200E22C1C /* Info.plist */; };
 		707F6AB51931E0930060E8C9 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 707F6AB41931E0930060E8C9 /* Entitlements.plist */; };
 		707F6AB71931E2440060E8C9 /* Squelch-storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707F6AB61931E2440060E8C9 /* Squelch-storyboard.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		706DBFB4196E345E00469990 /* MMPSilence.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MMPSilence.wav; sourceTree = "<group>"; };
+		706DBFB8196E490600469990 /* White Lights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "White Lights.mp3"; sourceTree = "<group>"; };
 		707BD594195BE5D200E22C1C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		707F6AB41931E0930060E8C9 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		707F6AB61931E2440060E8C9 /* Squelch-storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Squelch-storyboard.storyboard"; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		709F74181931DEAE00881C0C /* Squelch */ = {
 			isa = PBXGroup;
 			children = (
+				706DBFB8196E490600469990 /* White Lights.mp3 */,
+				706DBFB4196E345E00469990 /* MMPSilence.wav */,
 				709F74211931DEAE00881C0C /* AppDelegate.h */,
 				709F74221931DEAE00881C0C /* AppDelegate.m */,
 				707F6AB81931E74D0060E8C9 /* SquelchViewController.h */,
@@ -238,10 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				707F6AB51931E0930060E8C9 /* Entitlements.plist in Resources */,
+				706DBFB9196E490600469990 /* White Lights.mp3 in Resources */,
 				709F741D1931DEAE00881C0C /* InfoPlist.strings in Resources */,
 				709F74251931DEAE00881C0C /* Images.xcassets in Resources */,
 				707BD595195BE5D200E22C1C /* Info.plist in Resources */,
 				707F6AB71931E2440060E8C9 /* Squelch-storyboard.storyboard in Resources */,
+				706DBFB5196E345E00469990 /* MMPSilence.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

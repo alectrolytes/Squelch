@@ -11,7 +11,6 @@
 @import CoreLocation;
 
 @interface SquelchViewController ()
-
 @end
 
 // Enable editing of DND
@@ -42,16 +41,26 @@ typedef NS_ENUM(NSInteger, BBBehaviorOverrideStatus) {
     [super viewDidLoad];
     /*// Sets DND to OFF when starting
     BBSettingsGateway *_settingsGateway = [[BBSettingsGateway alloc] init];
-    [_settingsGateway setBehaviorOverrideStatus:BBBehaviorOverrideStatusOff];
-     */
+    [_settingsGateway setBehaviorOverrideStatus:BBBehaviorOverrideStatusOff];*/
     
-    // Background task bypass
-    UIBackgroundTaskIdentifier bgTask;
-    UIApplication  *app = [UIApplication sharedApplication];
-    bgTask = [app beginBackgroundTaskWithExpirationHandler:^{
-        [app endBackgroundTask:bgTask];
-    }];
-    self.silenceTimer = [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(startLocationServices) userInfo:nil repeats:YES];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         pathForResource:@"MMPSilence"
+                                         ofType:@"wav"]];
+    
+    NSError *error;
+    _audioPlayer = [[AVAudioPlayer alloc]
+                    initWithContentsOfURL:url
+                    error:&error];
+    if (error)
+    {
+        NSLog(@"Error in audioPlayer: %@",
+              [error localizedDescription]);
+    } else {
+        _audioPlayer.delegate = self;
+        [_audioPlayer prepareToPlay];
+    }
+    
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,6 +74,8 @@ typedef NS_ENUM(NSInteger, BBBehaviorOverrideStatus) {
     [[MPMusicPlayerController iPodMusicPlayer] setVolume:0.0];
     BBSettingsGateway *_settingsGateway = [[BBSettingsGateway alloc] init];
     [_settingsGateway setBehaviorOverrideStatus:BBBehaviorOverrideStatusOn];
+    _audioPlayer.numberOfLoops = -1;
+    [_audioPlayer play]; // Play "audible" music
     NSDate *date = self.datePickerTime.date;
     NSTimer *timer = [[NSTimer alloc] initWithFireDate:date interval:0 target:self selector:@selector(turnOffDND) userInfo:nil repeats:NO];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
@@ -73,16 +84,11 @@ typedef NS_ENUM(NSInteger, BBBehaviorOverrideStatus) {
 // Turns off Do Not Disturb
 - (void)turnOffDND
 {
+    [[MPMusicPlayerController iPodMusicPlayer] setVolume:0.7];
     BBSettingsGateway *_settingsGateway = [[BBSettingsGateway alloc] init];
     [_settingsGateway setBehaviorOverrideStatus:BBBehaviorOverrideStatusOff];
+    [_audioPlayer pause]; // Disable "audible" music
     AudioServicesPlayAlertSound(kSystemSoundID_Vibrate); // Vibrate
-}
-
-// Background task bypass
-- (void)startLocationServices {
-    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-    [locationManager startUpdatingLocation];
-    [locationManager stopUpdatingLocation];
 }
 
 /*

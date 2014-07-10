@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <AudioToolbox/AudioToolbox.h>
 
@@ -19,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePickerTime;
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonStart;
+
+@property (strong, nonatomic) AVAudioPlayer *audioPlayer;
 
 // Background task bypass
 @property (nonatomic, strong) NSTimer *silenceTimer;
