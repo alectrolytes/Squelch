@@ -7,13 +7,32 @@
     },
     {
       "idiom" : "iphone",
+      "size" : "29x29",
+      "scale" : "3x"
+    },
+    {
       "size" : "40x40",
+      "idiom" : "iphone",
+      "filename" : "sleepingcat@80-80.png",
       "scale" : "2x"
     },
     {
+      "size" : "40x40",
       "idiom" : "iphone",
+      "filename" : "sleepingcat@180-181.png",
+      "scale" : "3x"
+    },
+    {
       "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "sleepingcat@120-121.png",
       "scale" : "2x"
+    },
+    {
+      "size" : "60x60",
+      "idiom" : "iphone",
+      "filename" : "sleepingcat@180-183.png",
+      "scale" : "3x"
     },
     {
       "idiom" : "ipad",

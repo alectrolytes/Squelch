@@ -43,6 +43,8 @@ typedef NS_ENUM(NSInteger, BBBehaviorOverrideStatus) {
     BBSettingsGateway *_settingsGateway = [[BBSettingsGateway alloc] init];
     [_settingsGateway setBehaviorOverrideStatus:BBBehaviorOverrideStatusOff];*/
     
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"spring.jpg"]];
+    
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
                                          pathForResource:@"MMPSilence"
                                          ofType:@"wav"]];

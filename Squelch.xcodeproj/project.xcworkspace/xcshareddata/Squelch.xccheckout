@@ -10,29 +10,29 @@
 	<string>Squelch</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6D5C9513-8A6B-426E-9B97-854CB9DE4A06</key>
+		<key>ACFE13143E6C0C6DF9C2E70B0672BDD471897888</key>
 		<string>https://github.com/alectrolytes/Squelch.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Squelch.xcodeproj/project.xcworkspace</string>
+	<string>Squelch.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6D5C9513-8A6B-426E-9B97-854CB9DE4A06</key>
+		<key>ACFE13143E6C0C6DF9C2E70B0672BDD471897888</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/alectrolytes/Squelch.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6D5C9513-8A6B-426E-9B97-854CB9DE4A06</string>
+	<string>ACFE13143E6C0C6DF9C2E70B0672BDD471897888</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6D5C9513-8A6B-426E-9B97-854CB9DE4A06</string>
+			<string>ACFE13143E6C0C6DF9C2E70B0672BDD471897888</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Squelch</string>
 		</dict>
