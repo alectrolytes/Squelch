@@ -1,9 +1,5 @@
-// Made by Team Cloudy
-// Alec Huang
-// Edward Aryee
-// Conrad Kramer
-// Adrien Truong
-// Code Day Philly 2014
+// Made by Team Nexus @ Code Day, Philly 2014
+// Alec Huang, Edward Aryee, Conrad Kramer, Adrien Truong
 
 Instructions:
 1. Select desired time of Do Not Disturb deactivation.
